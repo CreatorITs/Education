@@ -9,7 +9,7 @@ import (
 
 type Posts []struct {
 	UserId int    `json:"userId"`
-	Id     int	  `json:"id"`
+	Id     int    `json:"id"`
 	Title  string `json:"title"`
 	Body   string `json:"body"`
 }
@@ -126,7 +126,7 @@ func main() {
 	createTableComments("DB_UserID_7", "TableComments")
 
 
-// 	Posts struct
+// Posts struct
 	var post Posts
 	urlpost := "https://jsonplaceholder.typicode.com/posts?userId=7"
 	jsonPlaceHolder(urlpost, &post)
