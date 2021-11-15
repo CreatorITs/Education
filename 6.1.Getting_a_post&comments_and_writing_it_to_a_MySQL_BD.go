@@ -124,7 +124,7 @@ func main() {
 	createTable("DB_UserID_7", "TablePosts", 4, "UserId", "Id", "Title", "Body", "Empty")
 	createTable("DB_UserID_7", "TableComments", 5, "PostId", "Id", "Name", "Email", "Body")
 
-	// 	Posts struct
+	// Posts struct
 	var post Posts
 	urlpost := "https://jsonplaceholder.typicode.com/posts?userId=7"
 	jsonPlaceHolder(urlpost, &post)
